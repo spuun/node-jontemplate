@@ -5,12 +5,15 @@ Compiled templates are cached. When a template changes cache will be cleared for
 
 ## example
 ```javascript
-var template = require('./templates')({
-  path: 'templates',
-  extension: 'html'
-});
+var template = require('jontemplate');
+var app = require('express')();
+app.engine('html', template());
+app.set('views', './views');
+app.set('view engine', 'html');
 
-console.log(template('index', {someVar: 'value'));
+app.get('/', (req, res) => {
+	res.render('index', {someVar: 'hello world'});
+});
 ```
 
 *templates/index.html*

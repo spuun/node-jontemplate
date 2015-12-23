@@ -1,13 +1,13 @@
 {
   "name": "jontemplate",
   "description": "Simple template engine based on lodash.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [
     "template"
   ],
   "author": "Jon Börjesson <jon@spuun.se>",
   "engines": {
-    "node": ">=5.0.0"
+    "node": "^5.0.0"
   },
   "license": "MIT",
   "main": "./lib/template.js",
