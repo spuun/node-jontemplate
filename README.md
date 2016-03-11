@@ -1,7 +1,7 @@
 # jontemplate
 Simple template engine based on [lodash template](https://lodash.com/docs#template).
 
-Compiled templates are cached. When a template changes cache will be cleared for that template.
+Compiled templates are cached. When a template changes cache will be cleared for that template (err, not yet though).
 
 ## example
 ```javascript
